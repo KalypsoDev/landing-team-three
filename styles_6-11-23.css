@@ -24,7 +24,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 107px; /*CAMBIO: Para que se vea el título de las secciones*/
+    scroll-padding-top: 57px; /*CAMBIO: Para que se vea el título de las secciones*/
 }
 
 body {
@@ -41,9 +41,9 @@ header {
     background-color: #DADBE9;
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
-/*CAMBIOS*/
 #equipo {
     display: flex;
     align-items: center;
@@ -65,6 +65,7 @@ nav {
     align-items: center;
     justify-content: right;
     padding: 0 30px 0 0;
+    
 }
 
 #equipo > .logo {
@@ -131,9 +132,9 @@ h2 {
     line-height: normal;
 }
 
-/*AÑADIDO DE ANGELA >> PARA QUE CADA HIJO DE MAIN OCUPAN TODA LA PANTALLA*/
+/*AÑADIDO DE ANGELA >> PARA QUE CADA HIJO DE MAIN OCUPE TODA LA PANTALLA*/
 main > * {
-    min-height: calc(100vh - 107px);
+    min-height: calc(100vh - 57px);
 }
 
 /*CÓDIGO DE SLOGAN*>>CAMBIOS de Ángela>>*/
@@ -144,14 +145,14 @@ main > * {
 
 #slogan > img {
     width: 100%;
-    max-height: calc(100vh - 107px);
+    max-height: calc(100vh - 57px);
     object-fit: contain;
 }
 
 /*CÓDIGO DE INTEGRANTES*/
 
 #integrantes {
-    height: 658px;
+    height: 550px;
     background-color: #EAEBF5;
     padding-top: 50px;
 }
@@ -183,17 +184,16 @@ main > * {
 
 .container {
     position: relative;
-    padding: 15px;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 60px;
+    max-width: 900px;
+    left: 0;
+    margin: auto;
     display: flex;
     align-items: center;
 }
 
 .gallery_wrapper {
     overflow-x: auto;
-    margin: 5% 5%;
-    height: 500px;
 }
 
 .gallery {
@@ -201,7 +201,6 @@ main > * {
     flex-flow: row nowrap;
     gap: 60px;
     align-items: center;
-   
 }
 
 /* This is from w3schools */
@@ -225,7 +224,7 @@ main > * {
     position: relative;
     width: 300px;
     height: 350px;
-    transition: all 600ms ease-in-out 300ms;
+    transition: all 100ms ease-in-out 200ms;
 }
 
 .item:hover {
@@ -233,10 +232,10 @@ main > * {
   }
 
 .team_image{
-    width: 170px;
-    height: 170px;
+    width: 250px;
+    height: 250px;
     flex-shrink: 0;
-    transition: all 600ms ease-in-out;
+    transition: all 200ms ease-in-out;
     padding: 5px;
     border-radius: 100%;
 }
@@ -257,7 +256,7 @@ main > * {
     left: 0; /* Coloca a div no canto esquerdo do elemento pai */
     right: 0; /* Coloca a div no canto direito do elemento pai */
     bottom: 0; /* Coloca a div no fundo do elemento pai */
-    transition: all 600ms ease-in-out 300ms;
+    transition: all 100ms ease-in-out 200ms;
 }
 
 .maria h5 {
@@ -316,7 +315,7 @@ h6 {
 
 
 /*REVISAR ESTO DE H3*/
-  h3 {
+#integrantes h3 {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     text-align: center;
