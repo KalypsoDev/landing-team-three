@@ -30,6 +30,8 @@ html {
 body {
     width: 90%;
     margin: auto;
+    border-left: 2px solid  #DADBE9;
+    border-right: 2px solid  #DADBE9;
 }
 
 /*CÓDIGO DE HEADER*/
@@ -64,8 +66,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: right;
-    padding: 0 30px 0 0;
-    
+    padding: 0 30px 0 0;  
 }
 
 #equipo > .logo {
@@ -82,7 +83,7 @@ nav {
 #nav_bar a {
     text-decoration: none;
     color: #1C203C;
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 800;
     line-height: normal; 
@@ -263,7 +264,7 @@ main > * {
     display: flex;
 }
 
-h5{
+h5 {
     height: 25px;
     display: flex;
     align-items: center;
@@ -325,8 +326,6 @@ h6 {
     opacity: 1;
   }  
 
-
-/*REVISAR ESTO DE H3*/
 #integrantes h3 {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -360,6 +359,7 @@ h6 {
     flex-direction: column;
     align-items: center;
     margin: 5%;
+    column-gap: 20px;
 }
 
 .herramientas,.lenguajes {
@@ -367,13 +367,11 @@ h6 {
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
-    max-width: 850px;
-    padding: 10px;
+    max-width: 700px;
 }
 
-.box_herramientas,.box_lenguajes {
-    margin: 10px;
-    text-align: center;
+.box_lenguajes {
+    margin-top: 50px;
 }
 
 #herramientas_lenguajes figure img{
@@ -469,7 +467,7 @@ h6 {
 }
 
 #confianza {
-    background-color:#ca1963 ;
+    background-color:#489946 ;
     width: 90%;
 }
 
@@ -519,7 +517,6 @@ h6 {
 #progreso_banner {
     max-height: 90%;
     display: flex;
-    justify-content: space-between;
     align-content: center;
     align-items: center; /*CENTRADO*/
     padding-top: 5px;
@@ -528,8 +525,8 @@ h6 {
 
 #progreso_container {
     display: flex; 
-    justify-content: center;
     align-content: center;
+    justify-content: center;
     row-gap: 20px;
     
 }
@@ -543,8 +540,7 @@ h6 {
     padding-top: 0px;
     display: flex;
     flex-direction: column;
-    justify-items: flex-start;
-    align-content: space-around;
+    justify-content: center;
     column-gap: 5px;
     row-gap: 20px;
     padding: 5px;
@@ -568,7 +564,6 @@ h6 {
     align-content: center;
     flex-wrap: wrap;
     column-gap: 5px;
-    width: 90%;
     text-align: center;
     
 }
@@ -576,7 +571,6 @@ h6 {
 #estadisticas_progreso > h3 {
     width: 90%;
     text-align: center;
-    padding: 5px;
 }
 
 .estadisticas_container {
@@ -588,37 +582,41 @@ h6 {
     align-items: center;
     column-gap: 5px;
     row-gap: 5px;
+    height: 200px;
 }
 
 .estadisticas_container > img {
-    max-width: 80%;
+    max-width: 60%;
     border-radius: 2%;
     margin: auto;
 }
 
 .estadisticas_container > button {
     width: 200px;
-    color:rgb(92, 36, 89);
+    color:rgb(0, 0, 0);
     padding: 5px;
     margin: 2px;
     border-radius: 20px;
 }
 
+.estadisticas_container > button:hover {
+    cursor: pointer;
+    color: purple;
+}
+
 #proyectos_container {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: baseline;
 }
 
 #proximos_proyectos {
-    width: 90%;
+    height: 200px;
     text-align: center;
     border: 2px solid rgba(130, 82, 158, 0.4);
     border-radius: 10px;
     margin-top: 10px;
-    padding: 10px;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
@@ -629,11 +627,10 @@ h6 {
     width: 90%;
     text-align: center;
     padding: 5px;
+    margin-bottom: 20px;
 }
 
 .cards_proyectos {
-    max-width: 30%;
-    padding: 2px;
     border-radius: 2%;
     text-align: center;
     display: flex;
@@ -641,13 +638,17 @@ h6 {
     justify-items: center;
     align-content: center;
     align-items: center;
-    row-gap: 5px;
+   justify-content: space-around;
+   margin-inline: 40px;
 }
 
 
 .cards_proyectos > img {
-    max-width: 70%;
+    max-width: 80%;
     border-radius: 2%;
+    width: 130px;
+    height: 80px;
+    padding: 5px;
 }
 
 /*PONER CÓDIGO RESPONSIVE PARA PROGRESO Y BANNER
@@ -660,18 +661,19 @@ h6 {
 /*CÓDIGO DEL FOOTER*/
 
 footer {
-    /*position: sticky; Para que se quede fijo*/
     bottom: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: #DADBE9;
     padding: 0 30px;
+    align-items: center;
 }
 .logo_copyright {
     text-align: center;
 }
 .logo_copyright > img {
-    width: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .logo{
@@ -679,18 +681,19 @@ footer {
 }
 
 .copyright{
-font-size: 10px;
-padding-bottom: 10px;
+    font-size: 10px;
+    padding-bottom: 10px;
+    color: #1C203C;
 }
 
-.redes_contacto_container{
+#redes_contacto {
     display: flex;
-    flex-direction: row;
+    gap: 10px;
+    margin-right: 0;
 }
-
 .redes_contacto_icon img{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 
