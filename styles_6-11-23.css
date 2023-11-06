@@ -28,7 +28,7 @@ html {
 }
 
 body {
-    width: 100%;
+    width: 90%;
     margin: auto;
 }
 
@@ -63,6 +63,7 @@ nav {
 
 nav > .logo {
     width: 50px;
+    margin-left: 10px;
 }
 
 #nav_bar {
