@@ -33,18 +33,25 @@ body {
 }
 
 /*CÓDIGO DE HEADER*/
-#sticky {
+header {
     position: sticky;
     top: 0;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /*filter*/
     flex-wrap: wrap;
+    background-color: #DADBE9;
+    display: flex;
+    justify-content: space-between;
 }
 
 /*CAMBIOS*/
+#equipo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 30px 0 0;
+}
 
 h1 {    
-    text-align: center;
-    background-color: #DADBE9;
     color: #1C203C;
     font-family: Monofett;
     font-size: 50px;
@@ -56,14 +63,13 @@ h1 {
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
     padding: 0 30px 0 0;
-    background: #fff;
 }
 
-nav > .logo {
+#equipo > .logo {
     width: 50px;
-    margin-left: 10px;
+    margin: 0 15px;
 }
 
 #nav_bar {
