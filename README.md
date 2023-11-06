@@ -37,16 +37,27 @@
     *sección con el seguimiento del progreso del equipo en relación con sus objetivos
 
 -Entregar: 
+
     *sketch
+
     *mock-up
+
     *prototipo
+
     *landing page
+
     *kanban con historias de usuario
+
     *presentación (concepto, diseños, landing, código, aprendizajes, dificultades y estrategias para su superación).
 
 -Evaluación: 
+
     *presentación oral
+
     *dispositivas con flujo de trabajo 
+
     *code review
+
     *ajustada al marco de competencias
+
     *autoevaluación individual y grupal
