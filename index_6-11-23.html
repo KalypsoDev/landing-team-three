@@ -36,7 +36,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image/x-icon">
 </head>
-<body id="inicio">
+<body>
     <!--HEADER-->
     <header>
         <div id="equipo">
@@ -63,88 +63,115 @@
         <!--INTEGRANTES-->
         <section id="integrantes">
             <h2>Conoce a las integrantes</h2>
-            <div id="carousel">
-                <div class="team_image_box">
-                    <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de María">
-                    <h3 id="maria">Maria</h3>
-                    <div class="name_box"></div>
-                    <span class="name"></span>
-                </div>
-
-                <div class="team_image_box">
-                    <img class="team_image" src="./src/assets/img/nathalia.jfif" alt="Avatar de Nathalia">
-                    <h3 id="nathalia">Nathalia</h3>
-                    <div class="name_box"></div>
-                    <span class="name"></span>
-                </div>        
-
-                <div class="team_image_box">
-                    <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Ángela">
-                    <h3 id="angela">Ángela</h3>
-                    <div class="name_box"></div>
-                    <span class="name"></span>
-                </div>
-
-                <div class="team_image_box">
-                    <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Gabriela">
-                    <h3 id="maria">Gabriela</h3>
-                    <div class="name_box"></div>
-                    <span class="name"></span>
-                </div>
-
-                <div class="team_image_box">
-                    <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Victoria">
-                    <h3 id="victoria">Victoria</h3>
-                    <div class="name_box"></div>
-                    <span class="name"></span>
+            <div class="container">
+                <button class="arrow_left control" aria-label="Previous image">&lt;</button>
+                <button class="arrow_right control" aria-label="Next Image">&gt;</button>
+                <div class="gallery_wrapper">
+                    <div class="gallery">
+                        <div class="item current_item"> 
+                            <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de María">
+                            <h3 class="maria">María</h3>
+                            <div class="hover_content maria">
+                                <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de María">
+                                <h5>"Si puedes imaginarlo también puedes crearlo"</h5>
+                                <h6>Product Owner</h6>
+                            </div>
+                        </div>
+                        <div class="item current_item">
+                            <img class="team_image" src="./src/assets/img/nathalia.jfif" alt="Avatar de Nathalia">
+                            <h3 class="nathalia">Nathalia</h3>
+                            <div class="hover_content nathalia">
+                                <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Nathalia">
+                                <h5>"Si puedes imaginarlo también puedes crearlo"</h5>
+                                <h6>Developer</h6>
+                            </div>
+                        </div>
+                        <div class="item current_item">
+                            <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Ángela">
+                            <h3 class="angela">Ángela</h3>
+                            <div class="hover_content angela">
+                                <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Ángela">
+                                <h5>"Si puedes imaginarlo también puedes crearlo"</h5>
+                                <h6>Scrum Master</h6>
+                            </div>
+                      </div>
+                        <div class="item current_item"> 
+                            <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Gabriela">
+                            <h3 class="gabriela">Gabriela</h3>
+                            <div class="hover_content gabriela">
+                                <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Gabriela">
+                                <h5>"Si puedes imaginarlo también puedes crearlo"</h5>
+                                <h6>Developer</h6>
+                            </div>
+                        </div>
+                            <div class="item current_item">
+                                <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Victoria">
+                                <h3 class="victoria">Victoria</h3>
+                                <div class="hover_content victoria">
+                                    <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Victoria">
+                                    <h5>"Si puedes imaginarlo también puedes crearlo"</h5>
+                                    <h6>Developer</h6>
+                                </div>
+                            </div>             
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!--HERRAMIENTAS Y LENGUAJES-->
+        <!--HERRAMIENTAS Y LENGUAJES (imagenes de logos añadidas por María)-->
+
         <section id="herramientas_lenguajes">
             <h2>Herramientas y lenguajes</h2>
-            <div id="herramientas">
+            <div class="herramientas">
                 <figure class="box_herramientas">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Zoom">
-                    <figcaption >Zoom</figcaption>
+                    <img src="./src/assets/img/logoVisualStudio.png" alt="Logo de Visual Studio Code">
+                    <figcaption>Visual Studio Code</figcaption>
                 </figure>
                 <figure class="box_herramientas">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Discord">
-                    <figcaption >Discord</figcaption>
+                    <img src="./src/assets/img/logoZoom.png" alt="Logo de Zoom">
+                    <figcaption>Zoom</figcaption>
                 </figure>
                 <figure class="box_herramientas">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Figma">
-                    <figcaption >Figma</figcaption>
+                    <img src="./src/assets/img/google.org.png" alt="Logo de Google">
+                    <figcaption>Google</figcaption>
                 </figure>
                 <figure class="box_herramientas">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Google Drive">
-                    <figcaption >Google Drive</figcaption>
+                    <img src="./src/assets/img/logoFIGMA.png" alt="Logo de Figma">
+                    <figcaption>Figma</figcaption>
                 </figure>
                 <figure class="box_herramientas">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Visual Studio Code">
-                    <figcaption >Visual Studio Code</figcaption>
+                    <img src="./src/assets/img/logoTrello.png" alt="Logo de Trello">
+                    <figcaption>Trello</figcaption>
+                </figure>
+                <figure class="box_herramientas">
+                    <img src="./src/assets/img/logoDiscord.png" alt="Logo de Discord">
+                    <figcaption>Discord</figcaption>
+                </figure>
+                <figure class="box_herramientas">
+                    <img src="./src/assets/img/logoCloudFlare.png" alt="Logo de Cloudfare pages">
+                    <figcaption>Cloudfare Pages</figcaption>
+                </figure>
+                <figure class="box_herramientas">
+                    <img src="./src/assets/img/logoGithub.png" alt="Logo de Github">
+                    <figcaption>Git Hub</figcaption>
                 </figure>
             </div>
-            <div id="lenguajes">
+            <div class="lenguajes">
                 <figure class="box_lenguajes">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de HTML">
-                    <figcaption >HTML</figcaption>
+                    <img src="./src/assets/img/logoHtml.png" alt="Logo de HTML">
+                    <figcaption>HTML</figcaption>
                 </figure>
                 <figure class="box_lenguajes">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de CSS">
-                    <figcaption >CSS</figcaption>
+                    <img src="./src/assets/img/logoCss.png" alt="Logo de CSS">
+                    <figcaption>CSS</figcaption>
                 </figure>
                 <figure class="box_lenguajes">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de JAVASCRIPT">
-                    <figcaption >JAVASCRIPT</figcaption>
+                    <img src="./src/assets/img/logoJAVASCRIPT.png" alt="Logo de JAVASCRIPT">
+                    <figcaption>JAVASCRIPT</figcaption>
                 </figure>
-                <figure class="box_lenguajes">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de XXX">
-                    <figcaption >XXXX</figcaption>
-                </figure>
-            </div>           
+            </div>
         </section>
+
         <!--SALUD-->
         <section id="salud">
             <h2>Salud</h2>
@@ -250,9 +277,6 @@
             <figcaption class="copyright">©TeamThree</figcaption>
         </figure>
         <section id="redes_contacto">
-            <a href="https://factoriaf5.org">
-                <img src="./src/assets/img/otrologo_f5.png" alt="Página principal de la empresa">
-            </a> 
             <a href="https://www.youtube.com">
                 <img src="./src/assets/img/logo_youtube.png" alt="Youtube de la empresa">
             </a>
@@ -271,9 +295,104 @@
             </a>   
             <a href="mailto:asturias@factoriaf5.org">
                 <img src="./src/assets/img/logo_gmail.png" alt="Envía un correo a la empresa">      
-            </a>       
+            </a>     
+            <a href="https://factoriaf5.org">
+                <img src="./src/assets/img/otrologo_f5.png" alt="Página principal de Factoría F5">
+            </a> 
+            <a href="https://factoriaf5.org">
+                <img src="./src/assets/img/Logo-FemCodersF5-color.png" alt="Página principal de FemCoders">
+            </a>   
         </section>
     </footer>
     <script src="./animaciones-progreso.js"></script>
+    <script src="./animaciones-integrantes.js"></script>
 </body>
 </html>
+
+<!--
+        <section id="integrantes">
+            <h2>Conoce a las integrantes</h2>
+            <div id="carousel">
+                <div class="team_image_box">
+                    <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de María">
+                    <h3 id="maria">Maria</h3>
+                    <div class="name_box"></div>
+                    <span class="name"></span>
+                </div>
+
+                <div class="team_image_box">
+                    <img class="team_image" src="./src/assets/img/nathalia.jfif" alt="Avatar de Nathalia">
+                    <h3 id="nathalia">Nathalia</h3>
+                    <div class="name_box"></div>
+                    <span class="name"></span>
+                </div>        
+
+                <div class="team_image_box">
+                    <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Ángela">
+                    <h3 id="angela">Ángela</h3>
+                    <div class="name_box"></div>
+                    <span class="name"></span>
+                </div>
+
+                <div class="team_image_box">
+                    <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Gabriela">
+                    <h3 id="maria">Gabriela</h3>
+                    <div class="name_box"></div>
+                    <span class="name"></span>
+                </div>
+
+                <div class="team_image_box">
+                    <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Victoria">
+                    <h3 id="victoria">Victoria</h3>
+                    <div class="name_box"></div>
+                    <span class="name"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="herramientas_lenguajes">
+            <h2>Herramientas y lenguajes</h2>
+            <div id="herramientas">
+                <figure class="box_herramientas">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Zoom">
+                    <figcaption >Zoom</figcaption>
+                </figure>
+                <figure class="box_herramientas">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Discord">
+                    <figcaption >Discord</figcaption>
+                </figure>
+                <figure class="box_herramientas">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Figma">
+                    <figcaption >Figma</figcaption>
+                </figure>
+                <figure class="box_herramientas">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Google Drive">
+                    <figcaption >Google Drive</figcaption>
+                </figure>
+                <figure class="box_herramientas">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Visual Studio Code">
+                    <figcaption >Visual Studio Code</figcaption>
+                </figure>
+            </div>
+            <div id="lenguajes">
+                <figure class="box_lenguajes">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de HTML">
+                    <figcaption >HTML</figcaption>
+                </figure>
+                <figure class="box_lenguajes">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de CSS">
+                    <figcaption >CSS</figcaption>
+                </figure>
+                <figure class="box_lenguajes">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de JAVASCRIPT">
+                    <figcaption >JAVASCRIPT</figcaption>
+                </figure>
+                <figure class="box_lenguajes">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de XXX">
+                    <figcaption >XXXX</figcaption>
+                </figure>
+            </div>           
+        </section>
+
+
+-->

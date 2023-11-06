@@ -151,88 +151,225 @@ main > * {
 /*CÓDIGO DE INTEGRANTES*/
 
 #integrantes {
-    background-color: #F5F5F5;
-    height: 85vh;
-    padding-top: 15%;
+    height: 658px;
+    background-color: #EAEBF5;
+    padding-top: 50px;
+}
+
+.arrow_left,
+.arrow_right {
+    position: absolute;
+    left: 0;
+    right: auto;
+    font-size: 50px;
+    line-height: 150px;
+    width: 40px;
+    color: #1C203C;
+    cursor: pointer;
+    border: none;
+    background-color: #EAEBF5;
+}
+
+.arrow_left:hover,
+.arrow_right:hover {
+    color: #1c203ca1;
+}
+
+.arrow_right {
+    right: 0;
+    left: auto;
+    text-align: right;
+}
+
+.container {
+    position: relative;
+    padding: 15px;
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
-#carousel {
+.gallery_wrapper {
+    overflow-x: auto;
+    margin: 5% 5%;
+}
+
+.gallery {
     display: flex;
-    background-color: #F5F5F5
+    flex-flow: row nowrap;
+    gap: 40px;
+    align-items: center;
+   
 }
 
-.team_image_box {
-    background-color: white;
-    padding-right: 10px;
-    border-radius: 7%;
-    margin-right: 10px;
-    justify-content: space-between;
-    height: 40vh;
+/* This is from w3schools */
+/* 
+  https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.gallery_wrapper::-webkit-scrollbar {
+    display: none;
 }
 
-.team_image {
-    height: 250px;
-    width: 250px;
-    padding-left: 20px;
+/* Hide scrollbar for IE, Edge and Firefox */
+.gallery_wrapper {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.item {
+    border-radius: 10px;
+    position: relative;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.1);
+  }
+
+.team_image{
+    width: 170px;
+    height: 170px;
+    flex-shrink: 0;
+    transition: all 600ms ease-in-out;
+    padding: 5px;
     border-radius: 100%;
-    padding-top: 25px;
 }
 
-h3 {
-    color: #1C203C;
-    font-size: 25px;
-    font-family: Roboto;
-    font-weight: 800;
-    text-decoration: none;
-    padding-left: 20px;
-    border-radius: 7%;
+.current_item {
+  opacity: 1;
+  border-radius: 10px;
 }
 
-#angela {
-    background-color: #FFD267;
+.hover_content {
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    border-radius: 10px;
+    z-index: 1;
+    overflow: hidden;
+    top: 0; /* Coloca a div no topo do elemento pai */
+    left: 0; /* Coloca a div no canto esquerdo do elemento pai */
+    right: 0; /* Coloca a div no canto direito do elemento pai */
+    bottom: 0; /* Coloca a div no fundo do elemento pai */
 }
 
-#gabriela {
-    background-color: #84FF82;
+.hover_content img {
+    width: 70%;
+    height: 50%;
 }
 
-#maria {
+.maria h5 {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 100;
     background-color: #E6BFE1;
+    color:#1C203C;
+    margin-bottom: 10px;
 }
 
-#nathalia {
-    background-color: #72D1C2;
+.angela h5 {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 100;
+    background-color: #FFD267;;
+    color:#1C203C;
+    margin-bottom: 10px;
 }
 
-#victoria {
-    background-color: #FF6C6C;
+.gabriela h5 {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 100;
+    background-color: #84FF82;;
+    color:#1C203C;
+    margin-bottom: 10px;
 }
 
+.nathalia h5 {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 100;
+    background-color: #72D1C2;;
+    color:#1C203C;
+    margin-bottom: 10px;
+}
+
+.victoria h5 {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 100;
+    background-color: #FF6C6C;;
+    color:#1C203C;
+    margin-bottom: 10px;
+}
+
+h6 {
+    color:#1C203C;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+  .item:hover .hover_content {
+    opacity: 1;
+  }  
 
 
+/*REVISAR ESTO DE H3*/
+  h3 {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.angela {
+    background: linear-gradient(180deg, #FFD267 0%, #F5F5F5 100%);;
+}
+
+.gabriela {
+    background: linear-gradient(180deg, #84FF82 0%, #F5F5F5 100%);;
+}
+
+.maria {
+   background: linear-gradient(180deg, #E6BFE1 0%, #F5F5F5 100%);
+}
+
+.nathalia {
+    background: linear-gradient(180deg, #CDF7F2 0%, #F5F5F5 100%);}
+
+.victoria {
+    background: linear-gradient(180deg, #FF6C6C 0%, #F5F5F5 100%);
+}
 
 /*CÓDIGO DE HERRAMIENTAS Y LENGUAJES*/
-
-#herramientas, #lenguajes {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-    padding: 5px;
-}
-
-.box_herramientas, .box_lenguajes {
+/* Para garantir que os elementos estão alinhados no centro */
+#herramientas_lenguajes {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-    padding: 5px;
+    margin: 5%;
 }
 
+.herramientas,
+.lenguajes {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.box_herramientas,
+.box_lenguajes {
+    margin: 10px;
+    text-align: center;
+}
+
+figure img{
+    width: 160px;
+    height: 160px;
+}
 
 /*CÓDIGO DE SALUD*/
 
@@ -528,9 +665,85 @@ footer {
 #redes_contacto img {
     height: 30px;
 }
+
+#redes_contacto svg {
+    height: 30px;
+    color: #1C203C;
+}
+
 #redes_contacto a {
     color: black;
 }
+
+
+
+/*CÓDIGO DE INTEGRANTES*/
+
+/*#integrantes {
+    background-color: #F5F5F5;
+    height: 85vh;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#carousel {
+    display: flex;
+    background-color: #F5F5F5
+}
+
+.team_image_box {
+    background-color: white;
+    padding-right: 10px;
+    border-radius: 7%;
+    margin-right: 10px;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+.team_image {
+    height: 250px;
+    width: 250px;
+    padding-left: 20px;
+    border-radius: 100%;
+    padding-top: 25px;
+}
+
+h3 {
+    color: #1C203C;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 800;
+    text-decoration: none;
+    padding-left: 20px;
+    border-radius: 7%;
+}
+
+#angela {
+    background-color: #FFD267;
+}
+
+#gabriela {
+    background-color: #84FF82;
+}
+
+#maria {
+    background-color: #E6BFE1;
+}
+
+#nathalia {
+    background-color: #72D1C2;
+}
+
+#victoria {
+    background-color: #FF6C6C;
+}
+
+
+*/
+
+
 
 
 /*Código sin usar
@@ -551,9 +764,26 @@ footer {
 
 */
 
+/*CÓDIGO DE HERRAMIENTAS Y LENGUAJES* /
 
+#herramientas, #lenguajes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
 
+.box_herramientas, .box_lenguajes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
 
+*/
 
  
 
