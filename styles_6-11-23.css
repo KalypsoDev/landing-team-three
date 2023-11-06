@@ -65,13 +65,13 @@ nav > .logo {
     width: 50px;
 }
 
-#nav-bar {
+#nav_bar {
     display: flex;
     list-style: none;
     column-gap: 32px;
 }
 
-#nav-bar a {
+#nav_bar a {
     text-decoration: none;
     color: #1C203C;
     font-size: 25px;
@@ -81,7 +81,7 @@ nav > .logo {
 }
 
 /*opcional*/
-#nav-bar a:hover {
+#nav_bar a:hover {
     color: purple;
 }
 
@@ -157,7 +157,7 @@ main > * {
     background-color: #F5F5F5
 }
 
-.team-image-box {
+.team_image_box {
     background-color: white;
     padding-right: 10px;
     border-radius: 7%;
@@ -166,7 +166,7 @@ main > * {
     height: 40vh;
 }
 
-.team-image {
+.team_image {
     height: 250px;
     width: 250px;
     padding-left: 20px;
@@ -217,7 +217,7 @@ h3 {
     padding: 5px;
 }
 
-.box-herramientas, .box-lenguajes {
+.box_herramientas, .box_lenguajes {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -236,7 +236,7 @@ h3 {
     padding: 0;
 }
 
-.salud-content {
+.salud_content {
     width: 60%;
     height: 500px;
     left: 20%;
@@ -251,7 +251,7 @@ h4 {
 		0 0 0.2em rgba(28, 32, 60, 1);
 }
 
-.bar-medidora {
+.bar_medidora {
     display: flex;
     padding-bottom: 30px;
 }
@@ -272,7 +272,7 @@ h4 {
     
 }
 
-.bar-container {
+.bar_container {
     width: 100%;
     background-color: rgb(216, 214, 214);
     border-radius: 1rem;
@@ -362,7 +362,7 @@ h4 {
 
 
 /*CÓDIGO DE PROGRESO Y BANNER*/
-#progreso-banner {
+#progreso_banner {
     max-height: 90%;
     display: flex;
     justify-content: space-between;
@@ -372,7 +372,7 @@ h4 {
     box-sizing: content-box;
 }
 
-#progreso-container {
+#progreso_container {
     display: flex; 
     justify-content: center;
     align-content: center;
@@ -398,7 +398,7 @@ h4 {
     padding-top: 5px;
 }
 
-#estadisticas-progreso {
+#estadisticas_progreso {
     border: 2px solid rgba(98, 190, 144, 0.4);
     border-radius: 10px;
     padding: 2px;
@@ -412,13 +412,13 @@ h4 {
     
 }
 
-#estadisticas-progreso > h3 {
+#estadisticas_progreso > h3 {
     width: 90%;
     text-align: center;
     padding: 5px;
 }
 
-.estadisticas-container {
+.estadisticas_container {
     max-width: 30%;
     display: flex;
     flex-direction: column;
@@ -429,13 +429,13 @@ h4 {
     row-gap: 5px;
 }
 
-.estadisticas-container > img {
+.estadisticas_container > img {
     max-width: 80%;
     border-radius: 2%;
     margin: auto;
 }
 
-.estadisticas-container > button {
+.estadisticas_container > button {
     width: 200px;
     color:rgb(92, 36, 89);
     padding: 5px;
@@ -443,13 +443,13 @@ h4 {
     border-radius: 20px;
 }
 
-#proyectos-container {
+#proyectos_container {
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-#proximos-proyectos {
+#proximos_proyectos {
     width: 90%;
     text-align: center;
     border: 2px solid rgba(130, 82, 158, 0.4);
@@ -464,13 +464,13 @@ h4 {
     column-gap: 10px;
 }
 
-#proximos-proyectos > h3 {
+#proximos_proyectos > h3 {
     width: 90%;
     text-align: center;
     padding: 5px;
 }
 
-.cards-proyectos {
+.cards_proyectos {
     max-width: 30%;
     padding: 2px;
     border-radius: 2%;
@@ -484,7 +484,7 @@ h4 {
 }
 
 
-.cards-proyectos > img {
+.cards_proyectos > img {
     max-width: 70%;
     border-radius: 2%;
 }
@@ -506,22 +506,22 @@ footer {
     background-color: #DADBE9;
     padding: 0 30px;
 }
-.logo-copyright {
+.logo_copyright {
     text-align: center;
 }
-.logo-copyright > img {
+.logo_copyright > img {
     width: 50px;
 }
 
-#redes-contacto {
+#redes_contacto {
     display: flex;
     align-items: center;
     column-gap: 20px;
 }
-#redes-contacto img {
+#redes_contacto img {
     height: 30px;
 }
-#redes-contacto a {
+#redes_contacto a {
     color: black;
 }
 
