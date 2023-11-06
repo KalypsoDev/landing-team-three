@@ -1,0 +1,278 @@
+<!--
+-Reorganizar carpetas
+
+-Corregida la estructura del html
+-Añadido el título de la página
+-Mejor usar kebabcase y que sea coherente a lo largo de todo el código. Mejor no usar mayúsculas con clases o ids
+-Reestructurado el header
+-Quitado el id de h1
+-Añadidos textos alternativos
+-divs cambiados por section
+-Quitados espacios innecesarios
+-¿Usar nombres en inglés o en español?
+-Banner al lado de progreso
+-Simplificados clases e ids
+-Ajustados los nombres de las clases e ids a lo que había
+
+-Integrado código de Nathalia y Gabriela
+
+-Cambios en footer????
+
+-Cambios en progreso
+-Cambios en slogan y en el nav
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Three</title>
+    <link rel="stylesheet" href="./styles_6-11-23.css"> <!--falta esto del código original: type="text/css"-->
+    <!--Añadido de Nathalia-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Roboto:wght@900&display=swap" rel="stylesheet">
+</head>
+<body id="inicio">
+    <div class="sticky">
+        <!--HEADER-->
+        <header>
+            <h1>TEAM THREE</h1>
+        </header>
+            <!--NAV-->
+        <nav>
+            <img class="logo" src="./src/assets/img/logoThree.png" alt="Logo de Team Three">
+            <ul id="nav-bar">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#integrantes">Integrantes</a></li> <!--cambiados el texto y la clase-->
+                <li><a href="#herramientas-lenguajes">Herramientas y lenguajes</a></li> <!--quitado el espacio-->
+                <li><a href="#salud">Salud</a></li><!--quitado el espacio-->
+                <li><a href="#progreso-banner">Progreso</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--MAIN-->
+    <main>
+        <!--SLOGAN-->
+        <section id="slogan">
+            <img src="./src/assets/img/slogan-contenido.png" alt="Slogan de Team Three">
+        </section>
+        <!--INTEGRANTES-->
+        <section id="integrantes">
+            <h2>Conoce a las integrantes</h2>
+            <div id="carousel">
+                <div class="team-image-box">
+                    <img class="team-image" src="./src/assets/img/angela.jpg" alt="Avatar de María">
+                    <h3 id="maria">Maria</h3>
+                    <div class="name-box"></div>
+                    <span class="name"></span>
+                </div>
+
+                <div class="team-image-box">
+                    <img class="team-image" src="./src/assets/img/nathalia.jfif" alt="Avatar de Nathalia">
+                    <h3 id="nathalia">Nathalia</h3>
+                    <div class="name-box"></div>
+                    <span class="name"></span>
+                </div>        
+
+                <div class="team-image-box">
+                    <img class="team-image" src="./src/assets/img/angela.jpg" alt="Avatar de Ángela">
+                    <h3 id="angela">Ángela</h3>
+                    <div class="name-box"></div>
+                    <span class="name"></span>
+                </div>
+
+                <div class="team-image-box">
+                    <img class="team-image" src="./src/assets/img/angela.jpg" alt="Avatar de Gabriela">
+                    <h3 id="maria">Gabriela</h3>
+                    <div class="name-box"></div>
+                    <span class="name"></span>
+                </div>
+
+                <div class="team-image-box">
+                    <img class="team-image" src="./src/assets/img/angela.jpg" alt="Avatar de Victoria">
+                    <h3 id="victoria">Victoria</h3>
+                    <div class="name-box"></div>
+                    <span class="name"></span>
+                </div>
+            </div>
+        </section>
+
+        <!--HERRAMIENTAS Y LENGUAJES-->
+        <section id="herramientas-lenguajes">
+            <h2>Herramientas y lenguajes</h2>
+            <div id="herramientas">
+                <figure class="box-herramientas">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Zoom">
+                    <figcaption >Zoom</figcaption>
+                </figure>
+                <figure class="box-herramientas">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Discord">
+                    <figcaption >Discord</figcaption>
+                </figure>
+                <figure class="box-herramientas">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Figma">
+                    <figcaption >Figma</figcaption>
+                </figure>
+                <figure class="box-herramientas">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Google Drive">
+                    <figcaption >Google Drive</figcaption>
+                </figure>
+                <figure class="box-herramientas">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Visual Studio Code">
+                    <figcaption >Visual Studio Code</figcaption>
+                </figure>
+            </div>
+            <div id="lenguajes">
+                <figure class="box-lenguajes">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de HTML">
+                    <figcaption >HTML</figcaption>
+                </figure>
+                <figure class="box-lenguajes">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de CSS">
+                    <figcaption >CSS</figcaption>
+                </figure>
+                <figure class="box-lenguajes">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de JAVASCRIPT">
+                    <figcaption >JAVASCRIPT</figcaption>
+                </figure>
+                <figure class="box-lenguajes">
+                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de XXX">
+                    <figcaption >XXXX</figcaption>
+                </figure>
+            </div>           
+        </section>
+        <!--SALUD-->
+        <section id="salud">
+            <h2>Salud</h2>
+            <div class="salud-content">
+                <h4>Estrés</h4>
+                <div class="bar-medidora">
+                    <img id="triste" src="./src/assets/icons/sad.png" alt="Cara triste">
+                    <div class="bar-container">
+                        <div class="pct" id="estres">20%</div>
+                    </div>
+                    <img id="contento" src="./src/assets/icons/happy.png" alt="Cara feliz">
+                </div>
+
+                <h4>Cansancio</h4>
+                <div class="bar-medidora">
+                    <img id="triste" src="./src/assets/icons/sad.png" alt="Cara triste">
+                    <div class="bar-container">
+                        <div class="pct" id="cansancio">70%</div>
+                    </div>
+                    <img id="contento" src="./src/assets/icons/happy.png" alt="Cara feliz">
+                </div>
+    
+                <h4>Optimismo</h4>
+                <div class="bar-medidora">
+                    <img id="triste" src="./src/assets/icons/sad.png" alt="Cara triste">
+                    <div class="bar-container">
+                        <div class="pct" id="optimismo">95%</div>
+                    </div>
+                    <img id="contento" src="./src/assets/icons/happy.png" alt="Cara feliz">
+                </div>
+    
+                <h4>Confianza</h4>
+                <div class="bar-medidora">
+                    <img id="triste" src="./src/assets/icons/sad.png" alt="Cara triste">
+                    <div class="bar-container">
+                        <div class="pct" id="confianza">90%</div>
+                    </div>
+                    <img id="contento" src="./src/assets/icons/happy.png" alt="Cara feliz">
+                </div>
+            </div>
+        </section>
+
+        <!--PROGRESO-->
+        <div id="progreso-banner">
+            <div id="progreso-container">
+                <section id="progreso">
+                    <h2>Progreso</h2>
+                    <div id="estadisticas-progreso">
+                        <h3>Estadísticas</h3>
+                        <div class="estadisticas-container">
+                            <img src="https://cdn.pixabay.com/photo/2017/05/04/16/37/meeting-2284501_640.jpg" alt="Imagen de proyecto">
+                            <button onclick="Progreso('proyectos')" data-hasta="150" 
+                            data-sufijo=""
+                            id="proyectos"><h5>Número de proyectos completados</h4><span></span></button>
+                        </div>
+                        <div class="estadisticas-container">
+                            <img src="https://media.istockphoto.com/id/1429098447/es/foto/feliz-pareja-hablando-con-el-agente-de-seguros-en-una-reuni%C3%B3n.jpg?s=612x612&w=0&k=20&c=E-oD_sNN9WK2R3LUXlTs_u_mGbhNr_TKJ_WTdbwgPl4=" alt="Imagen de clientes sonrientes">
+                            <button onclick="Progreso('satisfaccion')" data-hasta="95" data-sufijo="%"
+                            id="satisfaccion"><h5>Porcentaje de clientes satisfechos</h4><span></span></button>
+                        </div>
+                        <div class="estadisticas-container">
+                            <img src="https://media.istockphoto.com/id/1408387701/es/foto/redes-sociales-marketing-imagen-generada-digitalmente-compromiso.jpg?s=612x612&w=0&k=20&c=2QZpiy55v1ZrqRtRHa49jRpv88TSrxhHax2NA3RtalY=" alt="Imagen de un móvil del que salen likes">
+                            <button onclick="Progreso('publicaciones')"
+                            data-hasta="200" 
+                            data-sufijo=""
+                            id="publicaciones"><h5>Número de publicaciones en RRSS</h4><span></span></button>
+                        </div>
+                    </div>
+                    <div id="proximos-proyectos">
+                        <h3>Próximos proyectos</h3>
+                        <div id="proyectos-container">
+                            <div class="cards-proyectos">
+                                <img src="https://media.istockphoto.com/id/1412871535/es/foto/amigos-viendo-pel%C3%ADculas-juntos-en-casa.jpg?s=612x612&w=0&k=20&c=Pdpq6zugaWGNnY6IIQb-fuAAHViOsV9pxiYa4YWZ37E=" alt="Imagen de unos amigos viendo una serie">
+                                <p>Página de tributo a Friends</p>
+                            </div>
+                            <div class="cards-proyectos">
+                                <img src="https://cdn.pixabay.com/photo/2017/01/24/01/13/quiz-2004350_640.png" alt="Imagen de un quiz">
+                                <p>Quiz responsivo</p>
+                            </div>
+                            <div class="cards-proyectos">
+                                <img src="https://cdn.pixabay.com/photo/2017/01/29/13/21/mobile-devices-2017980_640.png" alt="Imagen de una web del portfolio">
+                                <p>Portfolio colaborativo</p>
+                            </div>
+                            <div class="cards-proyectos">
+                                <img src="https://cdn.pixabay.com/photo/2015/06/02/12/59/book-794978_640.jpg" alt="Imagen de un cuento">
+                                <p>Cuento interactivo</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!--BANNER-->
+            <section id="banner">
+                <a href="https://femcoders.factoriaf5.org/"><img class="img-banner"src="./src/assets/img/Banner.png" alt="Banner del bootcamp de Fem Coders"></a>
+            </section>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <figure class="logo-copyright">
+            <img class="logo" src="./src/assets/img/logoThree.png" alt="Logo de Team Three">
+            <figcaption class="copyright">©TeamThree</figcaption>
+        </figure>
+        <section id="redes-contacto">
+            <a href="https://factoriaf5.org">
+                <img src="./src/assets/img/otrologo_f5.png" alt="Página principal de la empresa">
+            </a> 
+            <a href="https://www.youtube.com">
+                <img src="./src/assets/img/logo_youtube.png" alt="Youtube de la empresa">
+            </a>
+            <a href="https://www.instagram.com" alt="Instagram de la empresa">
+                <img src="./src/assets/img/logo_instagram.png">
+            </a>
+            <a href="https://www.facebook.com" alt="Facebook de la empresa">
+                <img src="./src/assets/img/logo_facebook.png">
+            </a>
+            <a href="https://twitter.com" alt="Twitter de la empresa">
+                <img src="./src/assets/img/logo_twitter.png">
+            </a>
+            <a href="https://www.linkedin.com" alt="LinkedIn de la empresa">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"><path fill="currentColor" d="M27.26 27.271h-4.733v-7.427c0-1.771-.037-4.047-2.475-4.047c-2.468 0-2.844 1.921-2.844 3.916v7.557h-4.739V11.999h4.552v2.083h.061c.636-1.203 2.183-2.468 4.491-2.468c4.801 0 5.692 3.161 5.692 7.271v8.385zM7.115 9.912a2.75 2.75 0 0 1-2.751-2.756a2.753 2.753 0 1 1 2.751 2.756zm2.374 17.359H4.74V12h4.749zM29.636 0H2.36C1.057 0 0 1.031 0 2.307v27.387c0 1.276 1.057 2.307 2.36 2.307h27.271c1.301 0 2.369-1.031 2.369-2.307V2.307C32 1.031 30.932 0 29.631 0z"/></svg>
+                <!--Descargar los svgs y los snippets de https://icones.js.org/-->
+            </a>   
+            <a href="mailto:asturias@factoriaf5.org">
+                <img src="./src/assets/img/logo_gmail.png" alt="Envía un correo a la empresa">      
+            </a>       
+        </section>
+    </footer>
+    <script src="./animaciones-progreso.js"></script>
+</body>
+</html>

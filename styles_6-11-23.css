@@ -1,0 +1,554 @@
+/*
+-Estructura del código revisado
+-Mejor no usar mayúsculas con clases e ids
+-Mejor usar h1 como selector
+-HTML reiniciado
+-Código del header y la nav completo
+-Simplificados clases e ids
+-Ajustados los nombres de las clases e ids a lo que había
+
+-¿Usar nombres en inglés o en español?
+
+-Integrado código de Nathalia y Gabriela
+-Cambios en progreso
+-Cambios en main
+-Cambios en slogan y en el nav
+-Animación de salud: %
+
+*/
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /*Añadido de Nathalia*/    
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 107px; /*CAMBIO: Para que se vea el título de las secciones*/
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+/*CÓDIGO DE HEADER*/
+.sticky {
+    position: sticky;
+    top: 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /*filter*/
+    flex-wrap: wrap;
+}
+
+header {
+    text-align: center;
+    background-color: #DADBE9;
+}
+
+h1 {    
+    color: #1C203C;
+    font-family: Monofett;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 0;
+    background: #fff;
+}
+
+nav > .logo {
+    width: 50px;
+}
+
+#nav-bar {
+    display: flex;
+    list-style: none;
+    column-gap: 32px;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: #1C203C;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal; 
+}
+
+/*opcional*/
+#nav-bar a:hover {
+    color: purple;
+}
+
+/*-------------RESPONSIVE- NAVBAR-------------*/
+@media only screen and (max-width:870px) {
+
+    ul li{
+        font-size:15px;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width:570px) {
+    nav{
+        width: 100%;
+    }
+
+    ul li{
+        
+        width: 100%;
+        text-align: left;
+        font-size:15px;
+        padding: 2px;
+    }
+
+    li a{
+        display: block;
+    }
+}
+
+/*CÓDIGO DE MAIN*/
+
+h2 {
+    text-align: center;
+    padding: 3rem;    
+    color: #1C203C;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+/*AÑADIDO DE ANGELA >> PARA QUE CADA HIJO DE MAIN OCUPAN TODA LA PANTALLA*/
+main > * {
+    min-height: calc(100vh - 107px);
+}
+
+/*CÓDIGO DE SLOGAN*>>CAMBIOS de Ángela>>*/
+
+#slogan {
+    background-image: url(./src/assets/img/slogan-fondo.png);
+}
+
+#slogan > img {
+    width: 100%;
+    max-height: calc(100vh - 107px);
+    object-fit: contain;
+}
+
+/*CÓDIGO DE INTEGRANTES*/
+
+#integrantes {
+    background-color: #F5F5F5;
+    height: 85vh;
+    padding-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#carousel {
+    display: flex;
+    background-color: #F5F5F5
+}
+
+.team-image-box {
+    background-color: white;
+    padding-right: 10px;
+    border-radius: 7%;
+    margin-right: 10px;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+.team-image {
+    height: 250px;
+    width: 250px;
+    padding-left: 20px;
+    border-radius: 100%;
+    padding-top: 25px;
+}
+
+h3 {
+    color: #1C203C;
+    font-size: 25px;
+    font-family: Roboto;
+    font-weight: 800;
+    text-decoration: none;
+    padding-left: 20px;
+    border-radius: 7%;
+}
+
+#angela {
+    background-color: #FFD267;
+}
+
+#gabriela {
+    background-color: #84FF82;
+}
+
+#maria {
+    background-color: #E6BFE1;
+}
+
+#nathalia {
+    background-color: #72D1C2;
+}
+
+#victoria {
+    background-color: #FF6C6C;
+}
+
+
+
+
+/*CÓDIGO DE HERRAMIENTAS Y LENGUAJES*/
+
+#herramientas, #lenguajes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.box-herramientas, .box-lenguajes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+
+/*CÓDIGO DE SALUD*/
+
+#salud {
+    width: 100%;
+    height: 650px;
+    background-color: rgba(234, 235, 245, 1);
+    padding: 0;
+}
+
+.salud-content {
+    width: 60%;
+    height: 500px;
+    left: 20%;
+    margin:auto;
+}
+
+h4 {
+    padding-left: 5px;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 0.2em rgba(28, 32, 60, 1), 0 0 0.2em rgba(28, 32, 60, 1),
+		0 0 0.2em rgba(28, 32, 60, 1);
+}
+
+.bar-medidora {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+#triste {
+    margin-right: 5px;
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    
+}
+
+#contento {
+    margin-left: 5px;
+    margin-top: 6px;
+    width: 48px;
+    height: 48px;
+    
+}
+
+.bar-container {
+    width: 100%;
+    background-color: rgb(216, 214, 214);
+    border-radius: 1rem;
+    padding: 0.5em;
+}
+
+.pct {
+    text-align: right;
+    padding: 10px;
+    color: white;
+    font-weight: 900;
+    border-radius: 4rem;
+    box-sizing: border-box; /*para que no se desborde*/
+}
+
+#estres {
+    background-color:#af4999 ;
+    width: 20%;
+}
+
+#salud:hover #estres {
+    animation: estres 2s forwards;
+}
+
+#cansancio { 
+    background-color:rgb(252, 175, 60) ;
+    width: 70%;
+}
+
+#salud:hover #cansancio {
+    animation: cansancio 2s forwards;
+}
+
+#optimismo {
+    background-color:#00658d ;
+    width: 95%;
+}
+#salud:hover #optimismo {
+    animation: optimismo 2s forwards;
+}
+
+#confianza {
+    background-color:#ca1963 ;
+    width: 90%;
+}
+
+#salud:hover #confianza {
+    animation: confianza 2s forwards;
+}
+
+
+@keyframes estres{
+    0% {
+        width:0;
+    }
+    100%{
+        width: 20%;
+    }
+}
+
+@keyframes cansancio{
+    0% {
+        width:0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes optimismo{
+    0% {
+        width:0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+@keyframes confianza{
+    0% {
+        width:0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+
+/*CÓDIGO DE PROGRESO Y BANNER*/
+#progreso-banner {
+    max-height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center; /*CENTRADO*/
+    padding-top: 5px;
+    box-sizing: content-box;
+}
+
+#progreso-container {
+    display: flex; 
+    justify-content: center;
+    align-content: center;
+    row-gap: 10px;
+}
+
+#progreso {
+    max-width: 90%;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    align-content: space-around;
+    column-gap: 5px;
+    row-gap: 10px;
+}
+
+#progreso > h2 {
+    padding-top: 5px;
+}
+
+#progreso > h3 {
+    padding-top: 5px;
+}
+
+#estadisticas-progreso {
+    border: 2px solid rgba(98, 190, 144, 0.4);
+    border-radius: 10px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    width: 90%;
+    text-align: center;
+    
+}
+
+#estadisticas-progreso > h3 {
+    width: 90%;
+    text-align: center;
+    padding: 5px;
+}
+
+.estadisticas-container {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+.estadisticas-container > img {
+    max-width: 80%;
+    border-radius: 2%;
+    margin: auto;
+}
+
+.estadisticas-container > button {
+    width: 200px;
+    color:rgb(92, 36, 89);
+    padding: 5px;
+    margin: 2px;
+    border-radius: 20px;
+}
+
+#proyectos-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#proximos-proyectos {
+    width: 90%;
+    text-align: center;
+    border: 2px solid rgba(130, 82, 158, 0.4);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+#proximos-proyectos > h3 {
+    width: 90%;
+    text-align: center;
+    padding: 5px;
+}
+
+.cards-proyectos {
+    max-width: 30%;
+    padding: 2px;
+    border-radius: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    row-gap: 5px;
+}
+
+
+.cards-proyectos > img {
+    max-width: 70%;
+    border-radius: 2%;
+}
+
+/*PONER CÓDIGO RESPONSIVE PARA PROGRESO Y BANNER
+
+#banner {
+    flex-wrap: wrap;
+}
+    */
+
+/*CÓDIGO DEL FOOTER*/
+
+footer {
+    /*position: sticky; Para que se quede fijo*/
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #DADBE9;
+    padding: 0 30px;
+}
+.logo-copyright {
+    text-align: center;
+}
+.logo-copyright > img {
+    width: 50px;
+}
+
+#redes-contacto {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+#redes-contacto img {
+    height: 30px;
+}
+#redes-contacto a {
+    color: black;
+}
+
+
+/*Código sin usar
+.carousel {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.carousel > div {
+    width: 25%;
+}
+
+.carousel > div > img {
+    width: 100%;
+}
+
+*/
+
+
+
+
+
+ 
+
+
