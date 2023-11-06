@@ -193,12 +193,13 @@ main > * {
 .gallery_wrapper {
     overflow-x: auto;
     margin: 5% 5%;
+    height: 500px;
 }
 
 .gallery {
     display: flex;
     flex-flow: row nowrap;
-    gap: 40px;
+    gap: 60px;
     align-items: center;
    
 }
@@ -222,12 +223,13 @@ main > * {
 .item {
     border-radius: 10px;
     position: relative;
-    width: 200px;
-    transition: transform 0.3s;
+    width: 300px;
+    height: 350px;
+    transition: all 600ms ease-in-out 300ms;
 }
 
 .item:hover {
-    transform: scale(1.1);
+    transform: scale(0.5.0.5);
   }
 
 .team_image{
@@ -255,11 +257,7 @@ main > * {
     left: 0; /* Coloca a div no canto esquerdo do elemento pai */
     right: 0; /* Coloca a div no canto direito do elemento pai */
     bottom: 0; /* Coloca a div no fundo do elemento pai */
-}
-
-.hover_content img {
-    width: 70%;
-    height: 50%;
+    transition: all 600ms ease-in-out 300ms;
 }
 
 .maria h5 {
@@ -366,7 +364,7 @@ h6 {
     text-align: center;
 }
 
-figure img{
+#herramientas_lenguajes figure img{
     width: 160px;
     height: 160px;
 }
