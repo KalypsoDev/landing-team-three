@@ -41,7 +41,7 @@ header {
     background-color: #DADBE9;
     display: flex;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 2;
 }
 
 #equipo {
@@ -259,6 +259,18 @@ main > * {
     transition: all 100ms ease-in-out 200ms;
 }
 
+.hover-content h5{
+    display: flex;
+}
+
+h5{
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
 .maria h5 {
     font-family: 'Roboto';
     font-style: italic;
@@ -350,22 +362,23 @@ h6 {
     margin: 5%;
 }
 
-.herramientas,
-.lenguajes {
+.herramientas,.lenguajes {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 850px;
+    padding: 10px;
 }
 
-.box_herramientas,
-.box_lenguajes {
+.box_herramientas,.box_lenguajes {
     margin: 10px;
     text-align: center;
 }
 
 #herramientas_lenguajes figure img{
-    width: 160px;
-    height: 160px;
+    width: 100px;
+    height: 100px;
 }
 
 /*CÓDIGO DE SALUD*/
@@ -384,7 +397,7 @@ h6 {
     margin:auto;
 }
 
-h4 {
+#salud h4 {
     padding-left: 5px;
     padding-bottom: 10px;
     color: rgb(255, 255, 255);
@@ -517,7 +530,12 @@ h4 {
     display: flex; 
     justify-content: center;
     align-content: center;
-    row-gap: 10px;
+    row-gap: 20px;
+    
+}
+
+#progreso_container h4 {
+    font-size: medium;
 }
 
 #progreso {
@@ -528,7 +546,8 @@ h4 {
     justify-items: flex-start;
     align-content: space-around;
     column-gap: 5px;
-    row-gap: 10px;
+    row-gap: 20px;
+    padding: 5px;
 }
 
 #progreso > h2 {
@@ -537,12 +556,13 @@ h4 {
 
 #progreso > h3 {
     padding-top: 5px;
+    margin-bottom: 5px;
 }
 
 #estadisticas_progreso {
     border: 2px solid rgba(98, 190, 144, 0.4);
     border-radius: 10px;
-    padding: 2px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -596,7 +616,7 @@ h4 {
     border: 2px solid rgba(130, 82, 158, 0.4);
     border-radius: 10px;
     margin-top: 10px;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -643,7 +663,7 @@ footer {
     /*position: sticky; Para que se quede fijo*/
     bottom: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #DADBE9;
     padding: 0 30px;
 }
@@ -651,27 +671,27 @@ footer {
     text-align: center;
 }
 .logo_copyright > img {
-    width: 50px;
+    width: 30px;
 }
 
-#redes_contacto {
+.logo{
+    padding-top: 10px;
+}
+
+.copyright{
+font-size: 10px;
+padding-bottom: 10px;
+}
+
+.redes_contacto_container{
     display: flex;
-    align-items: center;
-    column-gap: 20px;
-}
-#redes_contacto img {
-    height: 30px;
+    flex-direction: row;
 }
 
-#redes_contacto svg {
-    height: 30px;
-    color: #1C203C;
+.redes_contacto_icon img{
+    width: 20px;
+    height: 20px;
 }
-
-#redes_contacto a {
-    color: black;
-}
-
 
 
 /*CÓDIGO DE INTEGRANTES*/
