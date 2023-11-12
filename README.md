@@ -8,11 +8,11 @@ Nuestro producto consiste en una landing page estática que facilita el onboardi
  - JavaScript
    
 # Integrants of the team
- - Maria Mendez
+ - María Mendez
  - Ángela Antúnez
  - Nathalia Ruiz
  - Gabriela Farinha
  - Victoria
    
-# link 
-Nuestra landing fue desplegada con Cloudfare Pages y se puede ver aquí : https://landing-team-three.pages.dev/
+# Link 
+Nuestra landing fue desplegada con Cloudflare Pages y se puede ver aquí : https://landing-team-three.pages.dev/
