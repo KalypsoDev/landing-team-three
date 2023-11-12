@@ -1,30 +1,11 @@
-/*
--Estructura del código revisado
--Mejor no usar mayúsculas con clases e ids
--Mejor usar h1 como selector
--HTML reiniciado
--Código del header y la nav completo
--Simplificados clases e ids
--Ajustados los nombres de las clases e ids a lo que había
-
--¿Usar nombres en inglés o en español?
-
--Integrado código de Nathalia y Gabriela
--Cambios en progreso
--Cambios en main
--Cambios en slogan y en el nav
--Animación de salud: %
-
-*/
-
 * {
     margin: 0;
-    font-family: 'Roboto', sans-serif; /*Añadido de Nathalia*/    
+    font-family: 'Roboto', sans-serif;   
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 57px; /*CAMBIO: Para que se vea el título de las secciones*/
+    scroll-padding-top: 57px; /*Para que se vea el título de las secciones*/
 }
 
 body {
@@ -34,11 +15,10 @@ body {
     border-right: 2px solid  #DADBE9;
 }
 
-/*CÓDIGO DE HEADER*/
 header {
     position: sticky;
     top: 0;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); /*filter*/
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     flex-wrap: wrap;
     background-color: #DADBE9;
     display: flex;
@@ -89,7 +69,6 @@ nav {
     line-height: normal; 
 }
 
-/*opcional*/
 #nav_bar a:hover {
     color: purple;
 }
@@ -121,8 +100,6 @@ nav {
     }
 }
 
-/*CÓDIGO DE MAIN*/
-
 h2 {
     text-align: center;
     padding: 3rem;    
@@ -133,12 +110,10 @@ h2 {
     line-height: normal;
 }
 
-/*AÑADIDO DE ANGELA >> PARA QUE CADA HIJO DE MAIN OCUPE TODA LA PANTALLA*/
+/*Para que cada hijo de main ocupe toda la pantalla*/
 main > * {
     min-height: calc(100vh - 57px);
 }
-
-/*CÓDIGO DE SLOGAN*>>CAMBIOS de Ángela>>*/
 
 #slogan {
     background-image: url(./src/assets/img/slogan-fondo.png);
@@ -149,8 +124,6 @@ main > * {
     max-height: calc(100vh - 57px);
     object-fit: contain;
 }
-
-/*CÓDIGO DE INTEGRANTES*/
 
 #integrantes {
     height: 550px;
@@ -352,7 +325,6 @@ h6 {
     background: linear-gradient(180deg, #FF6C6C 0%, #F5F5F5 100%);
 }
 
-/*CÓDIGO DE HERRAMIENTAS Y LENGUAJES*/
 /* Para garantir que os elementos estão alinhados no centro */
 #herramientas_lenguajes {
     display: flex;
@@ -378,8 +350,6 @@ h6 {
     width: 100px;
     height: 100px;
 }
-
-/*CÓDIGO DE SALUD*/
 
 #salud {
     width: 100%;
@@ -437,7 +407,7 @@ h6 {
     color: white;
     font-weight: 900;
     border-radius: 4rem;
-    box-sizing: border-box; /*para que no se desborde*/
+    box-sizing: border-box; /*Para que no se desborde*/
 }
 
 #estres {
@@ -512,13 +482,11 @@ h6 {
     }
 }
 
-
-/*CÓDIGO DE PROGRESO Y BANNER*/
 #progreso_banner {
     max-height: 90%;
     display: flex;
     align-content: center;
-    align-items: center; /*CENTRADO*/
+    align-items: center;
     padding-top: 5px;
     box-sizing: content-box;
 }
@@ -658,8 +626,6 @@ h6 {
 }
     */
 
-/*CÓDIGO DEL FOOTER*/
-
 footer {
     bottom: 0;
     display: flex;
@@ -695,116 +661,3 @@ footer {
     width: 30px;
     height: 30px;
 }
-
-
-/*CÓDIGO DE INTEGRANTES*/
-
-/*#integrantes {
-    background-color: #F5F5F5;
-    height: 85vh;
-    padding-top: 15%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#carousel {
-    display: flex;
-    background-color: #F5F5F5
-}
-
-.team_image_box {
-    background-color: white;
-    padding-right: 10px;
-    border-radius: 7%;
-    margin-right: 10px;
-    justify-content: space-between;
-    height: 40vh;
-}
-
-.team_image {
-    height: 250px;
-    width: 250px;
-    padding-left: 20px;
-    border-radius: 100%;
-    padding-top: 25px;
-}
-
-h3 {
-    color: #1C203C;
-    font-size: 25px;
-    font-family: Roboto;
-    font-weight: 800;
-    text-decoration: none;
-    padding-left: 20px;
-    border-radius: 7%;
-}
-
-#angela {
-    background-color: #FFD267;
-}
-
-#gabriela {
-    background-color: #84FF82;
-}
-
-#maria {
-    background-color: #E6BFE1;
-}
-
-#nathalia {
-    background-color: #72D1C2;
-}
-
-#victoria {
-    background-color: #FF6C6C;
-}
-
-
-*/
-
-
-
-
-/*Código sin usar
-.carousel {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 80px;
-}
-
-.carousel > div {
-    width: 25%;
-}
-
-.carousel > div > img {
-    width: 100%;
-}
-
-*/
-
-/*CÓDIGO DE HERRAMIENTAS Y LENGUAJES* /
-
-#herramientas, #lenguajes {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 10px;
-    padding: 5px;
-}
-
-.box_herramientas, .box_lenguajes {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 5px;
-}
-
-*/
-
- 
-
-
