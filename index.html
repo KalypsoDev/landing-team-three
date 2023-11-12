@@ -1,66 +1,35 @@
-<!--
--Reorganizar carpetas
-
--Corregida la estructura del html
--Añadido el título de la página
--Mejor usar kebabcase y que sea coherente a lo largo de todo el código. Mejor no usar mayúsculas con clases o ids
--Reestructurado el header
--Quitado el id de h1
--Añadidos textos alternativos
--divs cambiados por section
--Quitados espacios innecesarios
--¿Usar nombres en inglés o en español?
--Banner al lado de progreso
--Simplificados clases e ids
--Ajustados los nombres de las clases e ids a lo que había
-
--Integrado código de Nathalia y Gabriela
-
--Cambios en footer????
-
--Cambios en progreso
--Cambios en slogan y en el nav
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Three</title>
-    <link rel="stylesheet" href="./styles.css"> <!--falta esto del código original: type="text/css"-->
-    <!--Añadido de Nathalia-->
+    <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./src/assets/icons/favicon.png" type="image/x-icon">
 </head>
 <body id="inicio">
-    <!--HEADER-->
     <header>
         <div id="equipo">
             <img class="logo" src="./src/assets/img/logoThree.png" alt="Logo de Team Three">
             <h1>TEAM THREE</h1>
         </div>
-        <!--NAV-->
         <nav>
             <ul id="nav_bar">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#integrantes">Integrantes</a></li> <!--cambiados el texto y la clase-->
-                <li><a href="#herramientas_lenguajes">Herramientas y lenguajes</a></li> <!--quitado el espacio-->
-                <li><a href="#salud">Salud</a></li><!--quitado el espacio-->
+                <li><a href="#integrantes">Integrantes</a></li>
+                <li><a href="#herramientas_lenguajes">Herramientas y lenguajes</a></li>
+                <li><a href="#salud">Salud</a></li>
                 <li><a href="#progreso_banner">Progreso</a></li>
             </ul>
         </nav>
     </header>
-    <!--MAIN-->
     <main>
-        <!--SLOGAN-->
         <section id="slogan">
             <img src="./src/assets/img/slogan-contenido.png" alt="Slogan de Team Three">
         </section>
-        <!--INTEGRANTES-->
         <section id="integrantes">
             <h2>Conoce a las integrantes</h2>
             <div class="container">
@@ -117,9 +86,6 @@
                 </div>
             </div>
         </section>
-
-        <!--HERRAMIENTAS Y LENGUAJES (imagenes de logos añadidas por María)-->
-
         <section id="herramientas_lenguajes">
             <h2>Herramientas y lenguajes</h2>
             <div class="herramientas">
@@ -171,8 +137,6 @@
                 </figure>
             </div>
         </section>
-
-        <!--SALUD-->
         <section id="salud">
             <h2>Salud</h2>
             <div class="salud_content">
@@ -184,7 +148,6 @@
                     </div>
                     <img id="contento" src="./src/assets/icons/happy.png" alt="Cara feliz">
                 </div>
-
                 <h4>Cansancio</h4>
                 <div class="bar_medidora">
                     <img id="triste" src="./src/assets/icons/sad.png" alt="Cara triste">
@@ -213,8 +176,6 @@
                 </div>
             </div>
         </section>
-
-        <!--PROGRESO-->
         <div id="progreso_banner">
             <div id="progreso_container">
                 <section id="progreso">
@@ -263,14 +224,11 @@
                     </div>
                 </section>
             </div>
-
-            <!--BANNER-->
             <section id="banner">
                 <a href="https://femcoders.factoriaf5.org/"><img class="img_banner"src="./src/assets/img/Banner.png" alt="Banner del bootcamp de Fem Coders"></a>
             </section>
         </div>
     </main>
-    <!--FOOTER-->
     <footer>
         <figure class="logo_copyright">
             <img class="logo" src="./src/assets/img/logoThree.png" alt="Logo de Team Three">
@@ -291,91 +249,3 @@
     <script src="./animaciones-integrantes.js"></script>
 </body>
 </html>
-
-<!--
-        <section id="integrantes">
-            <h2>Conoce a las integrantes</h2>
-            <div id="carousel">
-                <div class="team_image_box">
-                    <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de María">
-                    <h3 id="maria">Maria</h3>
-                    <div class="name_box"></div>
-                    <span class="name"></span>
-                </div>
-
-                <div class="team_image_box">
-                    <img class="team_image" src="./src/assets/img/nathalia.jfif" alt="Avatar de Nathalia">
-                    <h3 id="nathalia">Nathalia</h3>
-                    <div class="name_box"></div>
-                    <span class="name"></span>
-                </div>        
-
-                <div class="team_image_box">
-                    <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Ángela">
-                    <h3 id="angela">Ángela</h3>
-                    <div class="name_box"></div>
-                    <span class="name"></span>
-                </div>
-
-                <div class="team_image_box">
-                    <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Gabriela">
-                    <h3 id="maria">Gabriela</h3>
-                    <div class="name_box"></div>
-                    <span class="name"></span>
-                </div>
-
-                <div class="team_image_box">
-                    <img class="team_image" src="./src/assets/img/angela.jpg" alt="Avatar de Victoria">
-                    <h3 id="victoria">Victoria</h3>
-                    <div class="name_box"></div>
-                    <span class="name"></span>
-                </div>
-            </div>
-        </section>
-
-        <section id="herramientas_lenguajes">
-            <h2>Herramientas y lenguajes</h2>
-            <div id="herramientas">
-                <figure class="box_herramientas">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Zoom">
-                    <figcaption >Zoom</figcaption>
-                </figure>
-                <figure class="box_herramientas">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Discord">
-                    <figcaption >Discord</figcaption>
-                </figure>
-                <figure class="box_herramientas">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Figma">
-                    <figcaption >Figma</figcaption>
-                </figure>
-                <figure class="box_herramientas">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Google Drive">
-                    <figcaption >Google Drive</figcaption>
-                </figure>
-                <figure class="box_herramientas">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de Visual Studio Code">
-                    <figcaption >Visual Studio Code</figcaption>
-                </figure>
-            </div>
-            <div id="lenguajes">
-                <figure class="box_lenguajes">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de HTML">
-                    <figcaption >HTML</figcaption>
-                </figure>
-                <figure class="box_lenguajes">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de CSS">
-                    <figcaption >CSS</figcaption>
-                </figure>
-                <figure class="box_lenguajes">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de JAVASCRIPT">
-                    <figcaption >JAVASCRIPT</figcaption>
-                </figure>
-                <figure class="box_lenguajes">
-                    <img src="./src/assets/img/Ellipse.jpg" alt="Logo de XXX">
-                    <figcaption >XXXX</figcaption>
-                </figure>
-            </div>           
-        </section>
-
-
--->
